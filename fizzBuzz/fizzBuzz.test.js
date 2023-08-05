@@ -13,4 +13,13 @@ describe("Fzz buzz", () => {
     expect(fizzBuzz(93)).toBe("fizz");
     expect(fizzBuzz(1236)).toBe("fizz");
   });
+
+  test("returns buzz for numbers with multiply of 5", () => {
+    expect(fizzBuzz(5)).toBe("buzz");
+    expect(fizzBuzz(20)).toBe("buzz");
+    expect(fizzBuzz(50)).toBe("buzz");
+    expect(fizzBuzz(80)).toBe("buzz");
+    expect(fizzBuzz(200)).toBe("buzz");
+    expect(fizzBuzz(1000)).toBe("buzz");
+  });
 });
