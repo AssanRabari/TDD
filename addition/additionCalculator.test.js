@@ -12,5 +12,8 @@ describe("additionCalculator's test cases", () => {
   test("addition of 7 to equal 7", () => {
     expect(additionCalculator(7)).toBe(7);
   });
-  
+
+  test("addition of no argument provided to equal 0", () => {
+    expect(additionCalculator()).toBe(0);
+  });
 });
