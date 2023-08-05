@@ -8,5 +8,9 @@ describe("additionCalculator's test cases", () => {
   test("addition of 100, 50, 20, 45 and 30 to equal 245", () => {
     expect(additionCalculator(100, 50, 20, 45, 30)).toBe(245);
   });
+
+  test("addition of 7 to equal 7", () => {
+    expect(additionCalculator(7)).toBe(7);
+  });
   
 });
