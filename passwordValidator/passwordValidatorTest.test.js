@@ -14,4 +14,8 @@ describe("Password validator", () => {
     test('return false given a password 8 chr , no letters', () => {
         expect(validator("12345678")).toBe(false);
     });
+
+    test('return false given a password 8 chr , no numbers', () => {
+        expect(validator("aasdasdad")).toBe(false);
+    }); 
 });
