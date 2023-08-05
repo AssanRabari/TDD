@@ -22,4 +22,8 @@ describe("Password validator", () => {
     test('return false given a password 8 chr , all lowercase', () => {
         expect(validator("aasdasdad")).toBe(false);
     });
+
+    test('return false given a password is short ', () => {
+        expect(validator("a1")).toBe(false);
+    });
 });
